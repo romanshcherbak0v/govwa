@@ -13,7 +13,7 @@ jobs:
        uses: securego/gosec@master
        with:
         # we let the report trigger content trigger a failure using the GitHub Security features.
-         args: '-no-fail -fmt sonar -out gosec_sonar_report.json ./...'
+         args: '-no-fail -fmt sonarqube -out gosec_sonar_report.json ./...'
      - name: SonarCloud Scan
        uses: SonarSource/sonarcloud-github-action@master
        env:
