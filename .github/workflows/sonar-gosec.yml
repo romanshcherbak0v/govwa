@@ -1,6 +1,5 @@
 name: My Test Single Project
 on:
-  push:
   pull_request:
 jobs:
   analyze:
