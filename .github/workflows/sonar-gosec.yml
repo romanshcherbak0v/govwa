@@ -1,6 +1,10 @@
 name: My Test Single Project
 on:
+  push:
+    branches:
+      - master
   pull_request:
+      types: [opened, synchronize, reopened]
 jobs:
   analyze:
     name: Static analysis
